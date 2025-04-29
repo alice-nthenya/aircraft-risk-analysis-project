@@ -2,7 +2,7 @@ Student name: Alice N. Muia
 Student pace: part time
 Scheduled project review date/time: 29-04-2025
 Instructor name: George Kamundia
-Blog post URL:
+Blog post URL: https://public.tableau.com/app/profile/alice.muia/viz/Phase1projectAircraftAnalysis/Phase_1_Project?publish=yes
 
 
 

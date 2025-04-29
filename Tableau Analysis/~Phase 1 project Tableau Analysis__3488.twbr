@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8' ?>
 
 <!-- build 20251.25.0313.2002                               -->
-<workbook original-version='18.1' source-build='2025.1.0 (20251.25.0313.2002)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+<workbook original-version='18.1' source-build='2025.1.0 (20251.25.0313.2002)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
     <AccessibleZoneTabOrder />
     <AnimationOnByDefault />
@@ -18,6 +18,7 @@
     <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
     <WindowsPersistSimpleIdentifiers />
   </document-format-change-manifest>
+  <repository-location id='Phase1projectAircraftAnalysis' path='/workbooks' revision='1.0' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
@@ -27,7 +28,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='aviation_data_cleaned' name='textscan.1hdifzo1qwg0wl144yny10px7im5'>
-            <connection class='textscan' directory='C:/Users/Alice/Documents/Moringa/phase11/project_phase_1/aircraft_risk_analysis_project/data' filename='aviation_data_cleaned.csv' password='' server='' />
+            <connection class='textscan' directory='C:/Users/Alice/Documents/Moringa/phase11/project_phase_1/aircraft_risk_analysis_project/data' filename='aviation_data_cleaned.csv' password='' server='' workgroup-auth-mode='as-is' />
           </named-connection>
         </named-connections>
         <relation connection='textscan.1hdifzo1qwg0wl144yny10px7im5' name='aviation_data_cleaned.csv' table='[aviation_data_cleaned#csv]' type='table'>
@@ -360,7 +361,7 @@
       <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
       <column caption='aviation_data_cleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[aviation_data_cleaned.csv_0C4B54B60D6B4A469CE70C4AF175C77D]' role='measure' type='quantitative' />
       <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
-        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Alice/AppData/Local/Temp/TableauTemp/#TableauTemp_1hxmf2i0hql3g513mnq670odzw88.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/28/2025 01:45:50 PM' username='tableau_internal_user'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Alice/AppData/Local/Temp/TableauTemp/#TableauTemp_1hxmf2i0hql3g513mnq670odzw88.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
           <relation name='Extract' table='[Extract].[Extract]' type='table' />
           <metadata-records>
             <metadata-record class='column'>
@@ -376,7 +377,6 @@
               <approx-count>85121</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RGB' />
-              <object-id>[aviation_data_cleaned.csv_0C4B54B60D6B4A469CE70C4AF175C77D]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Investigation.Type</remote-name>
@@ -391,7 +391,6 @@
               <approx-count>2</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RGB' />
-              <object-id>[aviation_data_cleaned.csv_0C4B54B60D6B4A469CE70C4AF175C77D]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Event.Date</remote-name>
@@ -405,7 +404,6 @@
               <aggregation>Year</aggregation>
               <approx-count>25370</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[aviation_data_cleaned.csv_0C4B54B60D6B4A469CE70C4AF175C77D]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Location</remote-name>
@@ -420,7 +418,6 @@
               <approx-count>12546</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RGB' />
-              <object-id>[aviation_data_cleaned.csv_0C4B54B60D6B4A469CE70C4AF175C77D]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Country</remote-name>
@@ -435,7 +432,6 @@
               <approx-count>217</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RGB' />
-              <object-id>[aviation_data_cleaned.csv_0C4B54B60D6B4A469CE70C4AF175C77D]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Injury.Severity</remote-name>
@@ -450,7 +446,6 @@
               <approx-count>33</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RGB' />
-              <object-id>[aviation_data_cleaned.csv_0C4B54B60D6B4A469CE70C4AF175C77D]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Aircraft.damage</remote-name>
@@ -465,7 +460,6 @@
               <approx-count>7</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RGB' />
-              <object-id>[aviation_data_cleaned.csv_0C4B54B60D6B4A469CE70C4AF175C77D]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Aircraft.Category</remote-name>
@@ -480,7 +474,6 @@
               <approx-count>19</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RGB' />
-              <object-id>[aviation_data_cleaned.csv_0C4B54B60D6B4A469CE70C4AF175C77D]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Make</remote-name>
@@ -495,7 +488,6 @@
               <approx-count>2578</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RGB' />
-              <object-id>[aviation_data_cleaned.csv_0C4B54B60D6B4A469CE70C4AF175C77D]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Model</remote-name>
@@ -510,7 +502,6 @@
               <approx-count>5626</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RGB' />
-              <object-id>[aviation_data_cleaned.csv_0C4B54B60D6B4A469CE70C4AF175C77D]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Amateur.Built</remote-name>
@@ -525,7 +516,6 @@
               <approx-count>6</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RGB' />
-              <object-id>[aviation_data_cleaned.csv_0C4B54B60D6B4A469CE70C4AF175C77D]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Number.of.Engines</remote-name>
@@ -539,7 +529,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>6</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[aviation_data_cleaned.csv_0C4B54B60D6B4A469CE70C4AF175C77D]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Engine.Type</remote-name>
@@ -554,7 +543,6 @@
               <approx-count>6</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RGB' />
-              <object-id>[aviation_data_cleaned.csv_0C4B54B60D6B4A469CE70C4AF175C77D]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Purpose.of.flight</remote-name>
@@ -569,7 +557,6 @@
               <approx-count>42</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RGB' />
-              <object-id>[aviation_data_cleaned.csv_0C4B54B60D6B4A469CE70C4AF175C77D]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Total.Fatal.Injuries</remote-name>
@@ -583,7 +570,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>27</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[aviation_data_cleaned.csv_0C4B54B60D6B4A469CE70C4AF175C77D]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Total.Serious.Injuries</remote-name>
@@ -597,7 +583,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>16</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[aviation_data_cleaned.csv_0C4B54B60D6B4A469CE70C4AF175C77D]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Total.Minor.Injuries</remote-name>
@@ -611,7 +596,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>25</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[aviation_data_cleaned.csv_0C4B54B60D6B4A469CE70C4AF175C77D]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Total.Uninjured</remote-name>
@@ -625,7 +609,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>278</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[aviation_data_cleaned.csv_0C4B54B60D6B4A469CE70C4AF175C77D]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Weather.Condition</remote-name>
@@ -640,7 +623,6 @@
               <approx-count>4</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RGB' />
-              <object-id>[aviation_data_cleaned.csv_0C4B54B60D6B4A469CE70C4AF175C77D]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Broad.phase.of.flight</remote-name>
@@ -655,7 +637,6 @@
               <approx-count>11</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RGB' />
-              <object-id>[aviation_data_cleaned.csv_0C4B54B60D6B4A469CE70C4AF175C77D]</object-id>
             </metadata-record>
           </metadata-records>
         </connection>
@@ -12129,56 +12110,24 @@
     </worksheet>
   </worksheets>
   <dashboards>
-    <dashboard enable-sort-zone-taborder='true' name='Phase _1_Project'>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 2'>
       <style />
       <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
       <zones>
         <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
-          <zone h='48651' id='3' name='Sheet 1' w='24385' x='25615' y='1349'>
-            <zone-style>
-              <format attr='border-color' value='#000000' />
-              <format attr='border-style' value='none' />
-              <format attr='border-width' value='0' />
-              <format attr='margin' value='4' />
-            </zone-style>
-          </zone>
-          <zone h='48651' id='5' name='Sheet 2' w='48769' x='50000' y='1349'>
-            <zone-style>
-              <format attr='border-color' value='#000000' />
-              <format attr='border-style' value='none' />
-              <format attr='border-width' value='0' />
-              <format attr='margin' value='4' />
-            </zone-style>
-          </zone>
-          <zone h='48651' id='6' name='Sheet 3' w='48769' x='50000' y='50000'>
-            <zone-style>
-              <format attr='border-color' value='#000000' />
-              <format attr='border-style' value='none' />
-              <format attr='border-width' value='0' />
-              <format attr='margin' value='4' />
-            </zone-style>
-          </zone>
-          <zone h='97302' id='7' name='Sheet 4' w='12192' x='1231' y='1349'>
-            <zone-style>
-              <format attr='border-color' value='#000000' />
-              <format attr='border-style' value='none' />
-              <format attr='border-width' value='0' />
-              <format attr='margin' value='4' />
-            </zone-style>
-          </zone>
-          <zone h='97302' id='8' name='Sheet 5' w='12192' x='13423' y='1349'>
-            <zone-style>
-              <format attr='border-color' value='#000000' />
-              <format attr='border-style' value='none' />
-              <format attr='border-width' value='0' />
-              <format attr='margin' value='4' />
-            </zone-style>
-          </zone>
-          <zone h='48651' id='9' type-v2='dashboard-object' w='24385' x='25615' y='50000'>
-            <button action='' button-click-action-metadata='pdf'>
-              <export-button-action>tabdoc:abstract-dashboard-button-export-wrapper dashboard-button-export-type=&quot;pdf&quot; dashboarddoc-id=&quot;{7FDD204F-88F5-4EA8-A6E0-2F5D72A9B335}&quot;</export-button-action>
+          <zone h='97302' id='5' type-v2='dashboard-object' w='48769' x='1231' y='1349'>
+            <button action='' button-click-action-metadata='image'>
+              <export-button-action>tabdoc:abstract-dashboard-button-export-wrapper dashboard-button-export-type=&quot;image&quot; dashboarddoc-id=&quot;{0AD91327-642D-4957-AF00-E06EEE8D052C}&quot;</export-button-action>
               <button-visual-state />
             </button>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='97302' id='6' name='Sheet 2' w='48769' x='50000' y='1349'>
             <zone-style>
               <format attr='border-color' value='#000000' />
               <format attr='border-style' value='none' />
@@ -12198,8 +12147,169 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+            <zone h='100000' id='10' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97302' id='9' param='vert' type-v2='layout-flow' w='97538' x='1231' y='1349'>
+                <zone h='97302' id='5' type-v2='dashboard-object' w='48769' x='1231' y='1349'>
+                  <button action='' button-click-action-metadata='image'>
+                    <export-button-action>tabdoc:abstract-dashboard-button-export-wrapper dashboard-button-export-type=&quot;image&quot; dashboarddoc-id=&quot;{0AD91327-642D-4957-AF00-E06EEE8D052C}&quot;</export-button-action>
+                    <button-visual-state />
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='97302' id='6' is-fixed='true' name='Sheet 2' w='48769' x='50000' y='1349'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{0AD91327-642D-4957-AF00-E06EEE8D052C}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Phase _1_Project'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97302' id='11' param='vert' type-v2='layout-flow' w='97538' x='1231' y='1349'>
+            <zone h='7083' id='12' type-v2='title' w='97538' x='1231' y='1349'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='90219' id='9' type-v2='layout-basic' w='97538' x='1231' y='8432'>
+              <zone h='90219' id='3' name='Sheet 1' w='24385' x='25615' y='8432'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='45109' id='5' name='Sheet 2' w='48769' x='50000' y='8432'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='45110' id='6' name='Sheet 3' w='48769' x='50000' y='53541'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='90219' id='7' name='Sheet 4' w='12192' x='1231' y='8432'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='90219' id='8' name='Sheet 5' w='12192' x='13423' y='8432'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1550' minheight='1550' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='16' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97302' id='15' param='vert' type-v2='layout-flow' w='97538' x='1231' y='1349'>
+                <zone h='7083' id='12' type-v2='title' w='97538' x='1231' y='1349'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='90219' id='7' is-fixed='true' name='Sheet 4' w='12192' x='1231' y='8432'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='90219' id='8' is-fixed='true' name='Sheet 5' w='12192' x='13423' y='8432'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='90219' id='3' is-fixed='true' name='Sheet 1' w='24385' x='25615' y='8432'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45109' id='5' is-fixed='true' name='Sheet 2' w='48769' x='50000' y='8432'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45110' id='6' is-fixed='true' name='Sheet 3' w='48769' x='50000' y='53541'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
               <zone-style>
                 <format attr='border-color' value='#000000' />
                 <format attr='border-style' value='none' />
@@ -12380,6 +12490,15 @@
       </viewpoints>
       <active id='-1' />
       <simple-id uuid='{3E9F1C36-865C-494E-A469-0EFA77A9793F}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='5' />
+      <simple-id uuid='{CF33745B-F137-4A22-8C37-C6CA880DAFAD}' />
     </window>
   </windows>
 </workbook>
